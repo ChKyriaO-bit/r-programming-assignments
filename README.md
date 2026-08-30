@@ -1,2 +1,2 @@
-# r-programming-assignments
-Repository for R Programming Assignments
+# R-programming-assignments
+LIS6371 - Repository for R Programming Assignments
