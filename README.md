@@ -8,4 +8,4 @@ LIS6371 - Repository for R Programming Assignments
   - [Analysis of 2016 Poll Dataset](https://kyriaowensrprogrammingjournal.blogspot.com/2026/09/analyzing-2016-dataset-poll.html)
 
 <b>Visualizing and Interpreting Hospital Patient Data<b/>
-  - [Analysis of 2016 Poll Dataset]((https://kyriaowensrprogrammingjournal.blogspot.com/2026/09/visualizing-and-interpreting-hospital.html))
+  - [Visualizing and Interpreting Hospital Patient Data](https://kyriaowensrprogrammingjournal.blogspot.com/2026/09/visualizing-and-interpreting-hospital.html)
