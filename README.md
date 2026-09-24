@@ -9,3 +9,6 @@ LIS6371 - Repository for R Programming Assignments
 
 <b>Visualizing and Interpreting Hospital Patient Data<b/>
   - [Visualizing and Interpreting Hospital Patient Data](https://kyriaowensrprogrammingjournal.blogspot.com/2026/09/visualizing-and-interpreting-hospital.html)
+
+<b>Matrix Algebra in R<b/>
+  - [Matrix Algebra in R]( https://kyriaowensrprogrammingjournal.blogspot.com/2026/09/matrix-algebra-in-r.html)
