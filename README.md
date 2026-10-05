@@ -12,3 +12,6 @@ LIS6371 - Repository for R Programming Assignments
 
 <b>Matrix Algebra in R<b/>
   - [Matrix Algebra in R]( https://kyriaowensrprogrammingjournal.blogspot.com/2026/09/matrix-algebra-in-r.html)
+
+<b>Matrix Operation and Contruction<b/>
+  - [Matrix Operation and Contruction]( [https://kyriaowensrprogrammingjournal.blogspot.com/2026/09/matrix-algebra-in-r.html](https://kyriaowensrprogrammingjournal.blogspot.com/2026/10/assignment-6-matrix-operations-and.html))
