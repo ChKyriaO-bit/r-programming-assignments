@@ -15,3 +15,6 @@ LIS6371 - Repository for R Programming Assignments
 
 <b>Matrix Operation and Contruction<b/>
   - [Matrix Operation and Contruction](https://kyriaowensrprogrammingjournal.blogspot.com/2026/10/assignment-6-matrix-operations-and.html)
+
+<b>Exploring R’s Object Oriented Systems<b/>
+  - [Exploring R’s Object Oriented Systems](https://kyriaowensrprogrammingjournal.blogspot.com/2026/10/assignment-7-exploring-rs.html )
