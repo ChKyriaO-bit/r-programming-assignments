@@ -18,3 +18,8 @@ LIS6371 - Repository for R Programming Assignments
 
 <b>Exploring R’s Object Oriented Systems<b/>
   - [Exploring R’s Object Oriented Systems](https://kyriaowensrprogrammingjournal.blogspot.com/2026/10/assignment-7-exploring-rs.html )
+
+<b>Input/Output, String Manipulation, and the plyr Package<b/>
+  - [Input/Output, String Manipulation, and the plyr Package](https://kyriaowensrprogrammingjournal.blogspot.com/2026/10/assignment-8-inputoutput-string.html)
+
+
