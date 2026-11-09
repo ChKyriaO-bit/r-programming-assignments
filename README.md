@@ -24,3 +24,6 @@ LIS6371 - Repository for R Programming Assignments
 
 <b>Base Graphics, Lattice, and ggplot2<b/>
   - [Base Graphics, Lattice, and ggplot2](https://kyriaowensrprogrammingjournal.blogspot.com/2026/10/assignment-9-visualization-in-r-base.html)
+
+<b>Debugging and Defensive Programming in R<b/>
+  - [Debugging and Defensive Programming in R](https://kyriaowensrprogrammingjournal.blogspot.com/2026/11/debugging-and-defensive-programming-in-r.html)
