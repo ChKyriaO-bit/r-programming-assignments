@@ -1,0 +1,97 @@
+---
+title: "My R Markdown Primer"
+author: "Kyria Owens"
+date: "2026-11-15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+**R Markdown** is a file format that combines three things in a single document:
+narrative text written in Markdown, executable R code in *chunks*, and the
+output of that code (tables, plots, statistics). When you **knit** the file,
+R runs every chunk and weaves the results into a finished HTML, PDF, or Word
+report. Because the analysis and the write-up live together, the report can be
+regenerated at any time, which is the foundation of **reproducible research**.
+
+# Narrative Text with Markdown
+
+Markdown keeps formatting simple. You can write *italics*, **bold**, and
+`inline code`, and build lists:
+
+- Headers are created with `#` symbols.
+- Links look like [R Markdown](https://rmarkdown.rstudio.com).
+- Numbered lists, block quotes, and tables are also supported.
+
+Writing prose next to code means a reader can see not only *what* was computed
+but also *why*. The narrative explains the question, the code answers it, and
+the output shows the evidence.
+
+# Math with LaTeX
+
+Inline math is wrapped in single dollar signs, for example $\alpha + \beta = \gamma$
+or the sample mean $\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i$.
+
+Displayed equations use double dollar signs. The sample standard deviation is:
+
+$$
+s = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}\left(x_i - \bar{x}\right)^2}
+$$
+
+and the simple linear regression model is: 
+
+$$
+y_i = \beta_0 + \beta_1 x_i + \varepsilon_i, \qquad \varepsilon_i \sim N(0, \sigma^2).
+$$
+
+# Analysis with R Code Chunks
+
+## Chunk 1: Load data and summarize
+
+We use the built-in `mtcars` dataset, which contains fuel economy and design
+data for 32 automobiles. 
+```{r summary-stats}
+data(mtcars)
+head(mtcars)
+
+# Summary statistics for miles per gallon and weight
+summary(mtcars[, c("mpg", "wt")])
+
+# Mean mpg by number of cylinders
+aggregate(mpg ~ cyl, data = mtcars, FUN = mean)
+```
+
+## Chunk 2: Visualize with ggplot2
+
+Heavier cars tend to get worse mileage. Here is the relationship, with a
+fitted linear model corresponding to the regression equation above.
+```{r mpg-plot, fig.width=7, fig.height=4.5}
+library(ggplot2)
+
+ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
+  geom_point(size = 3) +
+  geom_smooth(method = "lm", se = FALSE, color = "black", linewidth = 0.8) +
+  labs(
+    title = "Fuel Economy vs. Vehicle Weight",
+    x = "Weight (1000 lbs)",
+    y = "Miles per gallon",
+    color = "Cylinders"
+  ) +
+  theme_minimal()
+```
+
+## Chunk 3: Fit the model (inline results)
+```{r model}
+fit <- lm(mpg ~ wt, data = mtcars)
+summary(fit)
+```
+
+The estimated slope is `r round(coef(fit)[2], 2)` mpg per 1000 lbs, so each
+additional 1000 lbs of weight is associated with about
+`r round(abs(coef(fit)[2]), 1)` fewer miles per gallon. The model explains
+`r round(summary(fit)$r.squared * 100, 1)`% of the variance in mpg. These
+numbers are computed inline, so they update automatically if the data change.
