@@ -27,3 +27,6 @@ LIS6371 - Repository for R Programming Assignments
 
 <b>Debugging and Defensive Programming in R<b/>
   - [Debugging and Defensive Programming in R](https://kyriaowensrprogrammingjournal.blogspot.com/2026/11/debugging-and-defensive-programming-in-r.html)
+
+<b>Introduction to R Markdown<b/>
+  - [Introduction to R Markdown]()
